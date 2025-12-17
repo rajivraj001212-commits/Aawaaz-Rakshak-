@@ -1,0 +1,40 @@
+package com.example.aawazrakshak;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MainActivity extends AppCompatActivity {
+
+    TextToSpeech tts;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        tts = new TextToSpeech(this, status -> {});
+
+        findViewById(R.id.btnVoice).setOnClickListener(v ->
+            tts.speak(
+                "Yeh awaaz nakli ho sakti hai. Paisa na bheje.",
+                TextToSpeech.QUEUE_FLUSH,
+                null,
+                null
+            )
+        );
+
+        findViewById(R.id.btnQR).setOnClickListener(v ->
+            startActivity(new Intent(this, QrScamActivity.class))
+        );
+
+        findViewById(R.id.btnVideo).setOnClickListener(v ->
+            startActivity(new Intent(this, FakeVideoActivity.class))
+        );
+
+        findViewById(R.id.btnStop).setOnClickListener(v ->
+            startActivity(new Intent(this, EmergencyStopActivity.class))
+        );
+    }
+}
