@@ -1,0 +1,20 @@
+package com.example.aawazrakshak;
+
+import android.os.Bundle;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+
+public class FakeVideoActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_video);
+
+        new AlertDialog.Builder(this)
+            .setTitle("Deepfake Alert")
+            .setMessage("Is video me AI-generated manipulation ke lakshan mile hain.")
+            .setPositiveButton("OK", null)
+            .show();
+    }
+}
