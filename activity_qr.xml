@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#D32F2F">
+
+    <TextView
+        android:text="⚠ WARNING"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:text="QR Scan se Paisa Kat Sakta Hai"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:text="PIN MAT DALIYE"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:paddingTop="10dp"/>
+</LinearLayout>
