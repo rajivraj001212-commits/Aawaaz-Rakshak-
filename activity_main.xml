@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:text="AAWAZ RAKSHAK"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:paddingBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnVoice"
+        android:text="🔊 Fake Voice Check"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1976D2"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnQR"
+        android:text="⚠ QR Scam Check"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#D32F2F"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnVideo"
+        android:text="🎥 Fake Video Check"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#512DA8"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnStop"
+        android:text="🛑 EMERGENCY STOP"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#B71C1C"
+        android:textColor="#FFFFFF"/>
+</LinearLayout>
